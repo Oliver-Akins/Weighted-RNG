@@ -1,0 +1,34 @@
+h1, h2, h3 { text-align: center; }
+
+
+div.container {
+    text-align: center;
+    border-radius: 7px;
+    margin: 5px auto;
+    padding: 10px;
+    width: 95%;
+}
+
+
+
+div.line {
+    --margin-height: 15px;
+    height: 2px;
+    background-color: #7289da;
+    margin-top: var(--margin-height);
+    margin-bottom: var(--margin-height);
+}
+
+
+
+input[type="text"] {
+    display: inline-block !important;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Move boxes further apart */
+input[type="text"].left { margin-right: 10%; }
+input[type="text"].right { margin-left: 10%; }

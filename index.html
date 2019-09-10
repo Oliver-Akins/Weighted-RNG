@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weighted Choice Maker</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- JAVASCRIPT -->
+        <script src="./js/add_choice.js"></script>
+    </head>
+    <body>
+        <template id="choice-template">
+            <div class="choice">
+                <input type="text" class="left" placeholder="Choice Name">
+                <input class="right" type="text" placeholder="Choice Weighting">
+                <div class="line"></div>
+            </div>
+        </template>
+        <h1>Weighted Choice Maker</h1>
+        <div class="container">
+            <h2>Choices:</h2>
+            <button onclick="add_choice()">Add New Choice</button>
+            <br>
+            <div id="choices">
+                <div class="choice">
+                    <div class="line"></div>
+                    <input class="left" type="text" id="text-in-0" placeholder="Choice Name">
+                    <input class="right" type="text" id="weight-in-0" placeholder="Choice Weighting">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
