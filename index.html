@@ -12,6 +12,7 @@
 
         <!-- JAVASCRIPT -->
         <script src="./js/add_choice.js"></script>
+        <script src="./js/choosing.js"></script>
     </head>
     <body>
         <template id="choice-template">
@@ -26,14 +27,16 @@
             <h2>Choices:</h2>
             <button onclick="add_choice()">Add New Choice</button>
             <br>
+            <div class="line"></div>
             <div id="choices">
                 <div class="choice">
-                    <div class="line"></div>
                     <input class="left" type="text" id="text-in-0" placeholder="Choice Name">
                     <input class="right" type="text" id="weight-in-0" placeholder="Choice Weighting">
                     <div class="line"></div>
                 </div>
             </div>
+            <button onclick="choose_option()">Choose</button>
+            <h2>Chosen Entry: <span id="result"></span></h2>
         </div>
     </body>
 </html>
