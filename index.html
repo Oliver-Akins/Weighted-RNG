@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="style.css">
 
         <!-- JAVASCRIPT -->
+        <script src="./js/delete_choice.js"></script>
         <script src="./js/add_choice.js"></script>
         <script src="./js/choosing.js"></script>
     </head>
@@ -19,6 +20,7 @@
             <div class="choice">
                 <input type="text" class="left" placeholder="Choice Name">
                 <input class="right" type="text" placeholder="Choice Weighting">
+                <button class="delete" onclick="delete_choice(this)">X</button>
                 <div class="line"></div>
             </div>
         </template>
@@ -32,6 +34,7 @@
                 <div class="choice">
                     <input class="left" type="text" id="text-in-0" placeholder="Choice Name">
                     <input class="right" type="text" id="weight-in-0" placeholder="Choice Weighting">
+                    <button class="delete" onclick="delete_choice(this)">X</button>
                     <div class="line"></div>
                 </div>
             </div>
