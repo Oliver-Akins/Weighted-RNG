@@ -46,9 +46,10 @@ const app = new Vue({
 		updateChanceValues() {
 			for (const opt of this.options) {
 				if (!opt.weight) {
-					continue
-				}
-				opt.chance = Math.round(opt.weight / this.totalWeight * 100 );
+					opt.chance = ``;
+				} else {
+					opt.chance = Math.round(opt.weight / this.totalWeight * 100 );
+				};
 			};
 		},
 	},
