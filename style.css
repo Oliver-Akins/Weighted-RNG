@@ -1,5 +1,8 @@
 h1, h2, h3 { text-align: center; }
 
+[v-cloak] {
+	display: none !important;
+}
 
 div.container {
 	text-align: center;
@@ -24,14 +27,22 @@ div.line {
 }
 
 
+ul {
+	list-style: none;
+	padding-inline-start: 0;
+}
 
-input[type="text"] {
-	display: inline-block !important;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
-	width: 40%;
+ul > li {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+
+input[type="text"],
+input[type="number"] {
+	margin: 5px;
+	flex-grow: 1;
 }
 
 /* Move boxes further apart */
